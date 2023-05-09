@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Animated Form Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress">
+        <div class="progress-line"></div>
+        <div class="progress-num active">1</div>
+        <div class="progress-num">2</div>
+        <div class="progress-num">3</div>
+      </div>
+      <form action="" class="form" netlify>
+        <div class="form-card active-card">
+          <h2 class="form-header">Create your account</h2>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="email"
+              id="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="password"
+              id="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="form-element">
+            <label for="password-check">Confirm Password</label>
+            <input
+              type="password"
+              id="password-check"
+              class="password-check"
+              placeholder="Confirm password"
+              name="password-check"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+        </div>
+        <div class="form-card">
+          <h2 class="form-header">Social profiles</h2>
+          <div class="form-element">
+            <label for="facebook">Facebook</label>
+            <input
+              type="text"
+              class="facebook"
+              id="facebook"
+              placeholder="Username"
+              name="facebook"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="form-element">
+            <label for="twitter">Twitter</label>
+            <input
+              type="text"
+              class="twitter"
+              id="twitter"
+              placeholder="Username"
+              name="twitter"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="form-element">
+            <label for="instagram">Instagram</label>
+            <input
+              type="text"
+              id="instagram"
+              class="instagram"
+              placeholder="Username"
+              name="instagram"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+        </div>
+        <div class="form-card">
+          <h2 class="form-header">Personal details</h2>
+          <div class="form-element">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              class="first-name"
+              id="first-name"
+              placeholder="First name"
+              name="first-name"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="form-element">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              class="last-name"
+              id="last-name"
+              placeholder="Last name"
+              name="last-name"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="form-element">
+            <label for="phone">Phone number</label>
+            <input
+              type="text"
+              pattern="\d*"
+              minlength="10"
+              maxlength="13"
+              id="phone"
+              class="phone"
+              placeholder="e.g. 381 629 636 143"
+              name="phone"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+          <div class="form-element">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              class="address"
+              placeholder="Address"
+              name="address"
+              required
+            />
+            <p class="error-msg"></p>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-prev">Previous</button>
+          <button class="btn btn-next-1">Next</button>
+          <button class="btn btn-next-2">Next</button>
+          <button class="btn btn-submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
